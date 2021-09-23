@@ -1,0 +1,117 @@
+body {
+  background-image: url(bg.jpg);
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+header {
+  padding: 1vh 0;
+  background-color: rgb(60, 60, 60);
+}
+
+/* main */
+.main {
+  /* background: linear-gradient(to bottom right, blue, pink); */
+}
+
+/* フォームエフェクト */
+
+.cp_iptxt {
+  position: relative;
+  width: 20%;
+  margin: ;
+}
+.cp_iptxt input[type="text"] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  letter-spacing: 1px;
+  padding-left: 4em;
+}
+.cp_iptxt input[type="text"]:focus {
+  outline: none;
+}
+.ef {
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1px solid #1b2538;
+  background-color: transparent;
+}
+.ef ~ .focus_line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transition: 0.4s;
+  background-color: #da3c41;
+}
+.ef ~ .focus_line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transition: 0.4s;
+  background-color: #da3c41;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+.ef ~ label {
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  color: #aaaaaa;
+}
+.ef:focus ~ label,
+.cp_iptxt.ef ~ label {
+  font-size: 12px;
+  top: -16px;
+  transition: 0.3s;
+  color: #da3c41;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 5%; /* 角丸       */
+  font-size: 12pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 1vh 3vh; /* 余白       */
+  background: #1b2538; /* 背景色     */
+  color: #ffffff; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  border: 2px solid #1b2538; /* 枠の指定 */
+}
+.button:hover {
+  color: #1b2538; /* 背景色     */
+  background: #ffffff; /* 文字色     */
+}
+
+@media screen and (max-width: 1200px) {
+  .cp_iptxt {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .cp_iptxt {
+    width: 70%;
+  }
+}
+
+.res-icon {
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  margin: 0px 12px 0px 12px;
+}

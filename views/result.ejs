@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="loading.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;900&display=swap" rel="stylesheet">
+  <title><%=title %></title>
+</head>
+<body>
+  <!-- ローディング画面 -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+  <header>
+    
+  </header>
+  <div class="main">
+    <div>
+      <h1 class="t-center">BrawlStars Statics</h1>
+    </div>
+      <form action="/" method="post" class="t-center">
+        <div class="cp_iptxt margin-tb-5">
+          <input class="ef" type="text" name="id" id="id" placeholder="" required/>
+          <label>ブロスタID</label>
+          <span class="focus_line"></span>
+        </div>
+        <input id = "send" class = "send button" type="submit" value="送信" />
+      </form>
+      <div class="res">
+        <h5 class="t-center t-size2 margin-tb-1">
+          <img class="res-icon iconImg" src="icon/<%-icon %>.png" alt=""><%-name %><img class="res-icon iconImg" src="icon/<%-icon %>.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-content %></p><br>
+        <h5 class="t-center t-size2 margin-tb-1"><img class="res-icon" src="icon/trophy.png" alt=""><%-userTrp %><img class="res-icon" src="icon/trophy.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-trp %></p><br>
+        <h5 class="t-center t-size2 margin-tb-1"><img class="res-icon" src="icon/Ranking.png" alt=""><%-userHTrp %><img class="res-icon" src="icon/Ranking.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-hTrp %></p><br>
+        <h5 class="t-center t-size2 margin-tb-1"><img class="res-icon" src="icon/club.png" alt=""><%-userClub %><img class="res-icon" src="icon/club.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-club %></p><br>
+        <h5 class="t-center t-size2 margin-tb-1"><img class="res-icon" src="icon/3v3.png" alt=""><%-userVictory %><img class="res-icon" src="icon/3v3.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-victory %></p><br>
+        <h5 class="t-center t-size2 margin-tb-1"><img class="res-icon" src="icon/Showdown.png" alt=""><%-userSVictory %><img class="res-icon" src="icon/Showdown.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-soloVictory %></p><br>
+        <h5 class="t-center t-size2 margin-tb-1"><img class="res-icon" src="icon/Duo-Showdown.png" alt=""><%-userDVictory %><img class="res-icon" src="icon/Duo-Showdown.png" alt=""></h5>
+        <p class="t-center t-size1 margin-tb-1"> <%-duoVictory %></p><br>
+      </div>
+      <p>result.ejs</p>
+  </div>
+</body>
+<script type="text/javascript" src="loading.js"></script>
+</html>

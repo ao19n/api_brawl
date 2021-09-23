@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+/* color List */
+:root {
+  --black: #383838;
+  --white: #f8f4e6;
+  --blue: #5c9291;
+  --dark-blue: #2c4f54;
+}
+
+/* テキスト関連 text font */
+.t-color-main {
+  color: var(--black);
+}
+.t-color-white {
+  color: var(--white);
+}
+.t-color-blue {
+  color: var(--blue);
+}
+.t-color-dark-blue {
+  color: var(--dark-blue);
+}
+
+.t-right {
+  text-align: right;
+}
+.t-center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+
+.t-size1 {
+  font-size: 1.5rem;
+}
+
+.t-size2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .t-size1 {
+    font-size: 1.2rem;
+  }
+  .t-size2 {
+    font-size: 1rem;
+  }
+}
+
+.t-large {
+  font-size: xx-large;
+}
+
+.t-bold {
+  font-weight: bold;
+}
+
+/* background関連 background color */
+.bg-white {
+  background-color: var(--white);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+/* bg トリミング */
+.bg-fit {
+  object-fit: none;
+}
+
+/* 横幅関連 width */
+.w-10vw {
+  width: 10vw;
+}
+.w-20vw {
+  width: 20vw;
+}
+.w-30vw {
+  width: 30vw;
+}
+.w-40vw {
+  width: 40vw;
+}
+.w-50vw {
+  width: 50vw;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+.w-full {
+  width: 100%;
+}
+
+/* 高さ関連  height*/
+.h-10vh {
+  height: 10vh;
+}
+.h-20vh {
+  height: 20vh;
+}
+.h-30vh {
+  height: 30vh;
+}
+.h-40vh {
+  height: 40vh;
+}
+.h-50vh {
+  height: 50vh;
+}
+.h-80vh {
+  height: 80vh;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.line-h-10vh {
+  line-height: 10vh;
+}
+.line-h-20vh {
+  line-height: 20vh;
+}
+.line-h-30vh {
+  line-height: 30vh;
+}
+.line-h-40vh {
+  line-height: 40vh;
+}
+.line-h-50vh {
+  line-height: 50vh;
+}
+
+/* 重なり関連 z-index */
+/* 基準のソース https://material-ui.com/customization/z-index/ */
+.z-app-bar {
+  z-index: 1100;
+}
+.z-sidebar {
+  z-index: 1200;
+}
+.z-modal {
+  z-index: 1300;
+}
+
+/* margin関連  margin */
+.margin-auto {
+  margin: 0 auto;
+}
+.margin-tb-1 {
+  margin: 1vh auto;
+}
+.margin-tb-2 {
+  margin: 2vh auto;
+}
+.margin-tb-5 {
+  margin: 5vh auto;
+}
+/* padding関連 padding */
+.padding-tb-1 {
+  padding: 1vh 0;
+}
+.padding-tb-2 {
+  padding: 2vh 0;
+}
+.padding-tb-3 {
+  padding: 3vh 0;
+}
+.padding-tb-4 {
+  padding: 4vh 0;
+}
+.padding-tb-5 {
+  padding: 5vh 0;
+}
+.padding-tb-10 {
+  padding: 10vh 0;
+}
+
+.padding-rl-1 {
+  padding: 1vw 0;
+}
+.padding-rl-2 {
+  padding: 2vw 0;
+}
+.padding-rl-3 {
+  padding: 3vw 0;
+}
+.padding-rl-4 {
+  padding: 4vw 0;
+}
+.padding-rl-5 {
+  padding: 5vw 0;
+}
+.padding-rl-10 {
+  padding: 10vw 0;
+}
+
+/* リスト関連  list */
+.list-style {
+  list-style: none;
+}
+
+/* display関連 display */
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* aタグ関連 text-decoration */
+.t-decoration {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
