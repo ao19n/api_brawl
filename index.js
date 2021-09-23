@@ -42,7 +42,6 @@ app.get("/", function(req, res, next){
 app.post("/", (req, res) => {
     console.log(req.body.id);
     msg = req.body.id;
-    //   }); //非同期処理
     getApi(req.body.id)
     .then(function (resolve) {
       res.render("result.ejs", {
@@ -75,7 +74,7 @@ app.post("/", (req, res) => {
 
 function getApi(msg) {
     return new Promise(function(resolve, reject){
-        console.log("getApi")
+      // 任意のトークンアドレス
         const token = "{eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVlZmU5Mzk3LWVlYzQtNDdkYS04ZmE4LTQ2NTE5OTIwMzMzZSIsImlhdCI6MTYzMjQzOTc1MSwic3ViIjoiZGV2ZWxvcGVyL2NjYmQ3MjkyLWQ2YjAtOTUzOC00YTUyLThlZDU0NzhkODkxNyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTE4LjIzOC4yMzkuMjAyIiwiMTI2LjIxNi4xNDEuNTgiXSwidHlwZSI6ImNsaWVudCJ9XX0.vR2gVgh2qfB7TDM4oqofgCr1UHr_zORf0zl5WndOsKyfd5KAKFmx1vNUNyMXZawkmJ1MUOIHs0W53YJaHYDJZw}";
         const URL = 'https://api.brawlstars.com/v1'
         const tag = msg;
